@@ -75,8 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
             // Build URL (if location is not null)
             if(location != null && !location.equals("")) {
-               weatherURLRequest = NetworkUtils.buildUrl(SunshinePreferences.
-                       getPreferredWeatherLocation(MainActivity.this));
+               weatherURLRequest = NetworkUtils.buildUrl(location);
             }
 
             // Retrieve JSON and parse it (if URL is not null)
